@@ -67,11 +67,9 @@ const obj_07 = {
     name: 'shooting',
     balls: [21, 19, 22, 17, 13, 9]
 };
-const f_07 = () => {
-    let result;
-};
+const f_07 = () => Math.max(...obj_07.balls);
 document.querySelector('.b-7').addEventListener('click', () => {
-    // document.querySelector('.out-7').textContent = String(f_07());
+    document.querySelector('.out-7').textContent = String(f_07());
 });
 // Task 08
 // Создан объект obj_08. Напишите функцию, которая все свойства объекта приводит к нижнему регистру и удаляет пробелы по краям.

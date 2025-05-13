@@ -93,10 +93,7 @@ const obj_07: { name: string, balls: number[] } = {
     balls: [21, 19, 22, 17, 13, 9]
 }
 
-const f_07 = (): number=>{ 
-    let result : number = Math.max(obj_07.balls);
-    return result;
-}
+const f_07 = () : number => Math.max(...obj_07.balls);
 
 document.querySelector('.b-7').addEventListener('click', (): void => {
     document.querySelector('.out-7').textContent = String(f_07());
