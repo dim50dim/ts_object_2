@@ -41,12 +41,12 @@ document.querySelector('.b-3').addEventListener('click', (): void => {
 // Task 04
 //  Создан объект obj_03. Напишите функцию, которая возвращает строку, где ключи объекта перечислены через пробел. Тип функции укажите самостоятельно.
 
-// const f_04 = (): тут укажите тип => {
-    
-// }
+const f_04 = (): string => {
+   return  Object.keys(obj_03).join(' ');
+}
 
 document.querySelector('.b-4').addEventListener('click', (): void => {
-    // document.querySelector('.out-4').textContent = f_04();
+    document.querySelector('.out-4').textContent = f_04();
 });
 
 
