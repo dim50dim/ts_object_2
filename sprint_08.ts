@@ -57,12 +57,14 @@ const obj_05: { name: string, specifications: string[] } = {
     name: 'Wolves',
     specifications: ["IntenseSpeed", "Intelligence", "Teleportation", "Bite"]
 }
+const f_05 = (obj: { name: string, specifications: string[] }): string => {
+    return obj.specifications.join('_');
+}
 
-// const f_05 = (): тут укажите тип => {
-// }
+
 
 document.querySelector('.b-5').addEventListener('click', (): void => {
-    // document.querySelector('.out-5').textContent = f_05();
+    document.querySelector('.out-5').textContent = f_05(obj_05);
 });
 
 
@@ -75,12 +77,12 @@ const obj_06: { 'yellow': string, 'red': string, 'green': string } = {
     green: "G",
 }
 
-// const f_06 = ():тут укажите тип => {
-   
-// }
+const f_06 = ():string=> { 
+   return obj_06.yellow + '  ' + obj_06.red + ' ' + obj_06.green;
+}
 
 document.querySelector('.b-6').addEventListener('click', (): void => {
-    // document.querySelector('.out-6').textContent = f_06();
+    document.querySelector('.out-6').textContent = f_06();
 });
 
 // Task 07

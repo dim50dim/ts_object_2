@@ -42,10 +42,11 @@ const obj_05 = {
     name: 'Wolves',
     specifications: ["IntenseSpeed", "Intelligence", "Teleportation", "Bite"]
 };
-// const f_05 = (): тут укажите тип => {
-// }
+const f_05 = (obj) => {
+    return obj.specifications.join('_');
+};
 document.querySelector('.b-5').addEventListener('click', () => {
-    // document.querySelector('.out-5').textContent = f_05();
+    document.querySelector('.out-5').textContent = f_05(obj_05);
 });
 // Task 06
 // Создан объект obj_06. Напишите функцию, которая возвращает строку значений с разделителем между значениями через подчеркивание. Тип функции укажите самостоятельно. Перебор цикла выполнять циклом for in.
@@ -54,10 +55,11 @@ const obj_06 = {
     red: "R",
     green: "G",
 };
-// const f_06 = ():тут укажите тип => {
-// }
+const f_06 = () => {
+    return obj_06.yellow + '  ' + obj_06.red + ' ' + obj_06.green;
+};
 document.querySelector('.b-6').addEventListener('click', () => {
-    // document.querySelector('.out-6').textContent = f_06();
+    document.querySelector('.out-6').textContent = f_06();
 });
 // Task 07
 // Создан объект obj_07. Напишите функцию, которая возвращает самое большое число в свойстве balls. Тип функций укажите самостоятельно.
