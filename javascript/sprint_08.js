@@ -6,9 +6,16 @@ const obj_01 = {
     name2: 'Richter',
     year: 1944
 };
+console.log(obj_01);
 // Task 02
 // Создайте объект obj_02 с полями: role, email, vip. Поле role содержит строку 'admin', поле email содержит 'ppprrr@mail.ua', а поле vip укажите как необязательное, числовое. Выведите объект в консоль.
-// const obj_02 
+const obj_02 = {
+    role: 'admin',
+    email: 'pppprrrr@gmail.com'
+};
+console.log(obj_02.vip = 22);
+console.log(obj_02.vip);
+console.log(obj_02);
 // Task 03
 // Создан объект obj_03. Напишите функцию, которая возвращает строку, где значения объекта перечислены через пробел. Тип функции укажите самостоятельно. Коммента
 const obj_03 = {
