@@ -22,10 +22,11 @@ const obj_03 = {
     city: 'Kansas City',
     zip: 64101
 };
-// const f_03 = (): тут укажите тип => {
-// }
+const f_03 = () => {
+    return obj_03.city + ' ' + obj_03.zip;
+};
 document.querySelector('.b-3').addEventListener('click', () => {
-    // document.querySelector('.out-3').textContent = f_03();
+    document.querySelector('.out-3').textContent = f_03();
 });
 // Task 04
 //  Создан объект obj_03. Напишите функцию, которая возвращает строку, где ключи объекта перечислены через пробел. Тип функции укажите самостоятельно.
