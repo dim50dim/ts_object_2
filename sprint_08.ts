@@ -95,6 +95,7 @@ const obj_07: { name: string, balls: number[] } = {
 
 const f_07 = () : number => Math.max(...obj_07.balls);
 
+
 document.querySelector('.b-7').addEventListener('click', (): void => {
     document.querySelector('.out-7').textContent = String(f_07());
 });
@@ -108,9 +109,9 @@ const obj_08: { name: string, email: string, username: string } = {
     username: 'Rundic UOzlik'
 }
 
-// const f_08 = (): тут укажите тип => {
+const f_08 = (): => {
   
-// }
+}
 
 document.querySelector('.b-8').addEventListener('click', (): void => {
     // f_08();
