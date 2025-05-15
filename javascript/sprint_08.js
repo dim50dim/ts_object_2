@@ -154,7 +154,7 @@ const obj_13 = {
     step: 1,
     defense: 7,
     stamina: 13,
-    hit: [3, 3, 4]
+    hit: [3, 3, 45]
 };
 const f_13 = ({ title, step }) => {
     return title;
@@ -165,16 +165,17 @@ document.querySelector('.b-13').addEventListener('click', () => {
 // Task 14
 // Функция получает объект как аргумент, возвращает значение свойства hit. Не забывайте прописывать тип функции!!!
 const f_14 = ({ hit }) => {
-    return;
+    return hit;
 };
 document.querySelector('.b-14').addEventListener('click', () => {
     document.querySelector('.out-14').textContent = f_14(obj_13).join(' ');
 });
 // Task 15
 // Функция получаем объект как аргумент, и возвращает true, если есть хотя бы один удар (hit) по силе больший чем 5 и false в противном случае.
-// const f_15 = ({ hit }: { hit: number[] }): тут напишите тип => {
-// }
+const f_15 = ({ hit }) => {
+    return hit.some(item => item > 5);
+};
 document.querySelector('.b-15').addEventListener('click', () => {
-    // document.querySelector('.out-15').textContent = String(f_15(obj_13));
+    document.querySelector('.out-15').textContent = String(f_15(obj_13));
 });
 //# sourceMappingURL=sprint_08.js.map
