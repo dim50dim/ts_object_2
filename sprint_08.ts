@@ -134,7 +134,7 @@ const obj_09: { band: string, members: string[], location?: string } = {
 
 
 document.querySelector('.b-9').addEventListener('click', (): void => {
-    f_09();
+    // f_09();
     console.log(obj_09);
 });
 

@@ -95,14 +95,8 @@ const obj_09 = {
     band: 'System of a Town',
     members: ['Serj', 'Daron', 'Shavo', 'John']
 };
-const f_09 = () => {
-    return {
-        ...obj_09,
-        members: [...obj_09.members].sort()
-    };
-};
 document.querySelector('.b-9').addEventListener('click', () => {
-    f_09();
+    // f_09();
     console.log(obj_09);
 });
 // Task 10
