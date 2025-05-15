@@ -109,12 +109,16 @@ const obj_08: { name: string, email: string, username: string } = {
     username: 'Rundic UOzlik'
 }
 
-const f_08 = (): => {
-  
+const f_08 = () => {
+    const result : {[key : string]: string} = {};
+   for(const key in obj_08){
+      result[key] = obj_08[key].trim().toLowerCase();
+   }
+  return  result;
 }
 
 document.querySelector('.b-8').addEventListener('click', (): void => {
-    // f_08();
+    f_08();
     console.log(obj_08);
 });
 
@@ -127,12 +131,10 @@ const obj_09: { band: string, members: string[], location?: string } = {
     members: ['Serj', 'Daron', 'Shavo', 'John']
 }
 
-// const f_09 = (): тут укажите тип => {
-    
-// }
+
 
 document.querySelector('.b-9').addEventListener('click', (): void => {
-    // f_09();
+    f_09();
     console.log(obj_09);
 });
 

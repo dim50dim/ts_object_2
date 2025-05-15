@@ -78,10 +78,15 @@ const obj_08 = {
     email: 'potter_DEER@howards.MagiC ',
     username: 'Rundic UOzlik'
 };
-// const f_08 = (): тут укажите тип => {
-// }
+const f_08 = () => {
+    const result = {};
+    for (const key in obj_08) {
+        result[key] = obj_08[key].trim().toLowerCase();
+    }
+    return result;
+};
 document.querySelector('.b-8').addEventListener('click', () => {
-    // f_08();
+    f_08();
     console.log(obj_08);
 });
 // Task 09
@@ -90,10 +95,14 @@ const obj_09 = {
     band: 'System of a Town',
     members: ['Serj', 'Daron', 'Shavo', 'John']
 };
-// const f_09 = (): тут укажите тип => {
-// }
+const f_09 = () => {
+    return {
+        ...obj_09,
+        members: [...obj_09.members].sort()
+    };
+};
 document.querySelector('.b-9').addEventListener('click', () => {
-    // f_09();
+    f_09();
     console.log(obj_09);
 });
 // Task 10
