@@ -158,15 +158,15 @@ const obj_10: { date: string, data: string[] } = {
     ]
 }
 
-const f_10 = (some_var: {date: string,data:string[]}) : string[] => {
-       return some_var.data.filter(item => item.length !== 6);
+const f_10 =() : void => {
+    obj_10.data = obj_10.data.filter(item => item.length !== 6);
 }
+
 document.querySelector('.b-10').addEventListener('click', (): void => {
 
-    console.log(obj_10.data);
-    console.log(f_10(obj_10));
+    f_10();
+    console.log((obj_10));
   
-;
     
 });
 

@@ -116,13 +116,12 @@ const obj_10 = {
         '14235687'
     ]
 };
-const f_10 = (some_var) => {
-    return some_var.data.filter(item => item.length !== 6);
+const f_10 = () => {
+    obj_10.data = obj_10.data.filter(item => item.length !== 6);
 };
 document.querySelector('.b-10').addEventListener('click', () => {
-    console.log(obj_10.data);
-    console.log(f_10(obj_10));
-    ;
+    f_10();
+    console.log((obj_10));
 });
 // Task 11
 // Изучите работу функции f_11. Изучите как функция возвращает объект.
