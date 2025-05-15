@@ -95,9 +95,12 @@ const obj_09 = {
     band: 'System of a Town',
     members: ['Serj', 'Daron', 'Shavo', 'John']
 };
+const f_09 = (some_var) => {
+    console.log(some_var.members.sort());
+};
 document.querySelector('.b-9').addEventListener('click', () => {
-    // f_09();
-    console.log(obj_09);
+    console.log(obj_09.members);
+    f_09(obj_09);
 });
 // Task 10
 // Создан объект obj_10. Напишите функцию f_10. Функция удаляет с раздела data записи длина которых не равна 6.

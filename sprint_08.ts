@@ -130,12 +130,16 @@ const obj_09: { band: string, members: string[], location?: string } = {
     band: 'System of a Town',
     members: ['Serj', 'Daron', 'Shavo', 'John']
 }
-
+const f_09 = (some_var: {band:string,members : string[], location?: string})=> {
+           console.log(some_var.members.sort());
+           
+}
 
 
 document.querySelector('.b-9').addEventListener('click', (): void => {
-    // f_09();
-    console.log(obj_09);
+    console.log(obj_09.members);
+
+    f_09(obj_09);
 });
 
 // Task 10
