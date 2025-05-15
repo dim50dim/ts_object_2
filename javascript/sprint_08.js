@@ -141,7 +141,8 @@ const obj_12 = {
     hit: [3, 4, 5]
 };
 const f_12 = () => {
-    return;
+    const { hit, ...rest } = obj_12;
+    return rest;
 };
 document.querySelector('.b-12').addEventListener('click', () => {
     console.log(f_12());

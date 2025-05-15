@@ -194,7 +194,8 @@ const obj_12: { title: string, step: number, defense: number, stamina: number, h
 }
 
 const f_12 = (): { title: string, step: number, defense: number, stamina: number } => {
-    return;
+     const {hit, ...rest} = obj_12;
+     return rest;
 }
 
 document.querySelector('.b-12').addEventListener('click', (): void => {
