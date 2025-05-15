@@ -96,7 +96,7 @@ const obj_09 = {
     members: ['Serj', 'Daron', 'Shavo', 'John']
 };
 const f_09 = (some_var) => {
-    console.log(some_var.members.sort());
+    return (some_var.members.sort());
 };
 document.querySelector('.b-9').addEventListener('click', () => {
     console.log(obj_09.members);

@@ -130,8 +130,8 @@ const obj_09: { band: string, members: string[], location?: string } = {
     band: 'System of a Town',
     members: ['Serj', 'Daron', 'Shavo', 'John']
 }
-const f_09 = (some_var: {band:string,members : string[], location?: string})=> {
-           console.log(some_var.members.sort());
+const f_09 = (some_var: {band:string,members : string[], location?: string}) : string[]=> {
+           return (some_var.members.sort());
            
 }
 
